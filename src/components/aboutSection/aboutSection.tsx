@@ -14,7 +14,7 @@ export default function AboutSection() {
             duration={2}
             delay={0}
           >
-            <h1 className="text-4xl font-bold tracking-wide text-slate-950 underline decoration-cyan-800 decoration-4 underline-offset-4 vsm:text-5xl lg:text-6xl 2xl:mt-0">
+            <h1 className="text-4xl font-bold tracking-wide text-slate-950 vsm:text-5xl lg:text-6xl">
               About
             </h1>
           </AnimateWrapper>
