@@ -23,7 +23,7 @@ export default function CodeContent() {
           delay={0.6}
         >
           <OutsideLink
-            href={"https://github.com/Gujansko/Portfolio"}
+            href={"https://github.com/Gujansko/portfolioMK"}
             containsImage={false}
             underlineColor="decoration-slate-950"
           >
