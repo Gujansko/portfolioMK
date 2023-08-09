@@ -8,7 +8,7 @@ export default async function ExperienceSection() {
       className="flex min-h-screen flex-col flex-wrap justify-start"
       id="experience"
     >
-      <div className="lgw:mt-0 mb-20 mt-10 text-center text-4xl font-bold tracking-wide text-slate-50 vsm:text-5xl lg:mb-28 lg:text-6xl">
+      <div className="my-4 text-center text-4xl font-bold tracking-wide text-slate-50 vsm:text-5xl xl:mb-14 xl:mt-0 xl:text-6xl">
         <AnimateWrapper
           animationOccurence="whenInView"
           animationType="fadeInTop"
