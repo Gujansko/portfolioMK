@@ -12,15 +12,14 @@ export default function Footer() {
         <p>
           This personal portfolio was created using only personally written code
           with inspirations taken from free online sources. The images in the
-          about section were downloaded from the
+          about section were downloaded from the{" "}
           <a
             href="https://storyset.com/"
             target="_blank"
             className="text-base underline decoration-slate-50 decoration-2 underline-offset-4"
           >
-            {" "}
-            storyset website{" "}
-          </a>
+            storyset website
+          </a>{" "}
           in exchange for this attribution.
         </p>
         <p>Mateusz Kłos 2023 &copy;</p>

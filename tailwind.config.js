@@ -23,6 +23,7 @@ module.exports = {
       screens: {
         vsm: "480px",
         tiny: "300px",
+        "3xl": "1600px",
       },
     },
   },

@@ -28,7 +28,7 @@ export default function HomeSection() {
             src={face}
             alt="face"
             priority={true}
-            className="mx-auto translate-y-10 scale-90 rounded-full transition-all duration-700 ease-in-out group-hover:-translate-y-10 2xl:group-hover:scale-110"
+            className="mx-auto translate-y-10 scale-90 rounded-full transition-all duration-700 ease-in-out group-hover:-translate-y-4 vsm:group-hover:-translate-y-6 3xl:group-hover:-translate-y-10 3xl:group-hover:scale-110"
           />
         </AnimateWrapper>
         <div className="overflow-hidden">
@@ -39,7 +39,7 @@ export default function HomeSection() {
             delay={0.6}
           >
             <h2 className="translate-x-full cursor-default text-xl font-medium text-slate-50 opacity-0 transition-all duration-700 ease-in-out group-hover:translate-x-0 group-hover:opacity-100 tiny:text-2xl vsm:text-3xl xl:text-4xl">
-              CS Student at Politechnika Łódźka
+              CS Student at Lodz University of Technology
             </h2>
             <h2 className="mb-10 cursor-default text-2xl font-bold italic text-slate-50 transition-all duration-700 ease-in-out group-hover:translate-y-4 tiny:text-3xl vsm:text-4xl xl:text-5xl">
               Mateusz Kłos
