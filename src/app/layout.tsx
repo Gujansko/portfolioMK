@@ -1,5 +1,5 @@
 import "./globals.css";
-import { Noto_Sans } from "@next/font/google";
+import { Noto_Sans } from "next/font/google";
 
 const font = Noto_Sans({ weight: "500", subsets: ["latin"] });
 
