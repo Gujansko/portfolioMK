@@ -15,7 +15,7 @@ export default function OutsideLink({
     <a
       href={href}
       target="_blank"
-      className={`flex items-center justify-center text-2xl font-medium underline ${underlineColor} decoration-2 underline-offset-4 transition-all duration-200 hover:scale-110 ${
+      className={`flex items-center justify-center text-2xl font-medium underline ${underlineColor} decoration-2 underline-offset-8 transition-all duration-200 hover:scale-110 ${
         containsImage ? "flex-wrap gap-1" : "inline-flex"
       }`}
     >
