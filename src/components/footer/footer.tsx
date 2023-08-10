@@ -10,9 +10,9 @@ export default function Footer() {
         delay={0.8}
       >
         <p>
-          This personal portfolio was created using only personally written code
-          with inspirations taken from free online sources. The images in the
-          about section were downloaded from the{" "}
+          This portfolio was created using only personally written code with
+          inspirations taken from free online sources. The images in the about
+          section were downloaded from the{" "}
           <a
             href="https://storyset.com/"
             target="_blank"
