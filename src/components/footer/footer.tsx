@@ -16,7 +16,7 @@ export default function Footer() {
           <a
             href="https://storyset.com/"
             target="_blank"
-            className="text-base underline decoration-slate-50 decoration-2 underline-offset-8"
+            className="text-base underline decoration-slate-50 decoration-2 underline-offset-[6px]"
           >
             storyset website
           </a>{" "}
