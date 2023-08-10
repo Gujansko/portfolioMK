@@ -11,9 +11,7 @@ export default function CodeContent() {
         duration={1.5}
         delay={0.5}
       >
-        <div className="mb-6">
-          <p>You can checkout my work on Github:</p>
-        </div>
+        <p>You can checkout my work on Github:</p>
       </AnimateWrapper>
       <AnimateWrapper
         animationOccurence="whenInView"
