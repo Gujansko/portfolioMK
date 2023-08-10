@@ -20,6 +20,11 @@ export default function Sections() {
             </a>
           </NavLink>
           <NavLink animationType="fadeInTop" duration={0.4} delay={0.3}>
+            <a href="#technologies" className="text-xl">
+              Technologies
+            </a>
+          </NavLink>
+          <NavLink animationType="fadeInTop" duration={0.4} delay={0.4}>
             <a href="#contact" className="text-xl">
               Contact
             </a>

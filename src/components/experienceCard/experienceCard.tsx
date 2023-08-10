@@ -1,5 +1,4 @@
 import { experience } from "@/components/experienceSection/experience";
-import UsedTechnologiesDialog from "./usedTechnologiesDialog";
 
 export default function ExperienceCard(experienceDetails: experience) {
   return (
@@ -17,11 +16,6 @@ export default function ExperienceCard(experienceDetails: experience) {
         </div>
         <div className="text-lg font-medium text-slate-900">
           {experienceDetails.description}
-        </div>
-        <div>
-          <UsedTechnologiesDialog
-            technologies={experienceDetails.technologies}
-          />
         </div>
       </div>
     </div>

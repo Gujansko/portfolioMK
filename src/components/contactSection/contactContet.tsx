@@ -4,10 +4,10 @@ import OutsideLink from "./outsideLink";
 
 export default function ContactContent() {
   return (
-    <div className="flex flex-col flex-wrap gap-10">
+    <div className="flex flex-col flex-wrap items-center gap-10">
       <AnimateWrapper
         animationOccurence="whenInView"
-        animationType="fadeInBottom"
+        animationType="fadeInTop"
         duration={1.5}
         delay={0.5}
       >
@@ -15,7 +15,7 @@ export default function ContactContent() {
       </AnimateWrapper>
       <AnimateWrapper
         animationOccurence="whenInView"
-        animationType="fadeInBottom"
+        animationType="fadeInTop"
         duration={1.5}
         delay={0.6}
       >
@@ -28,14 +28,14 @@ export default function ContactContent() {
       </AnimateWrapper>
       <AnimateWrapper
         animationOccurence="whenInView"
-        animationType="fadeInBottom"
+        animationType="fadeInTop"
         duration={1.5}
         delay={0.7}
       >
         <OutsideLink
           href={"mailto:mateusz.klos150401@gmail.com"}
           containsImage={true}
-          underlineColor="decoration-slate-950"
+          underlineColor="decoration-slate-50"
         >
           <MailPlus width={30} height={30} />
           <p>Direct Email</p>
@@ -43,14 +43,14 @@ export default function ContactContent() {
       </AnimateWrapper>
       <AnimateWrapper
         animationOccurence="whenInView"
-        animationType="fadeInBottom"
+        animationType="fadeInTop"
         duration={1.5}
         delay={0.8}
       >
         <OutsideLink
           href={"https://www.linkedin.com/in/mateusz-klos-it-pl/"}
           containsImage={true}
-          underlineColor="decoration-slate-950"
+          underlineColor="decoration-slate-50"
         >
           <Linkedin width={30} height={30} />
           <p>LinkedIn Message</p>

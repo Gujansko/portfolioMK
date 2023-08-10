@@ -2,7 +2,7 @@ import AnimateWrapper from "../animations/animateWrapper";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-center p-8 text-center text-base">
+    <footer className="flex flex-col justify-center p-8 text-center text-base bg-slate-50 text-slate-950">
       <AnimateWrapper
         animationOccurence="whenInView"
         animationType="fadeInLeft"
@@ -16,7 +16,7 @@ export default function Footer() {
           <a
             href="https://storyset.com/"
             target="_blank"
-            className="text-base underline decoration-slate-50 decoration-2 underline-offset-[6px]"
+            className="text-base underline decoration-slate-950 decoration-2 underline-offset-[6px]"
           >
             storyset website
           </a>{" "}

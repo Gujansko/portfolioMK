@@ -97,19 +97,3 @@ function fadeInRight(duration: number, delay: number): animationVariants {
     },
   };
 }
-
-function fadeIn(duration: number, delay: number): animationVariants {
-  return {
-    inView: {
-      opacity: 1,
-      transition: {
-        type: "spring",
-        duration: duration,
-        delay: delay,
-      },
-    },
-    notInView: {
-      opacity: 0,
-    },
-  };
-}

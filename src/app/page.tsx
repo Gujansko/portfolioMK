@@ -6,6 +6,7 @@ import ExperienceSection from "@/components/experienceSection/experienceSection"
 import ContactSection from "@/components/contactSection/contactSection";
 import CurveDivider from "@/components/dividers/curveDivider";
 import Footer from "@/components/footer/footer";
+import TechnologiesSection from "@/components/technologiesSection/technologiesSection";
 
 export default function Home() {
   return (
@@ -17,8 +18,9 @@ export default function Home() {
       <WaveDivider placement="bottom" />
       <ExperienceSection />
       <CurveDivider placement="top" />
-      <ContactSection />
+      <TechnologiesSection />
       <CurveDivider placement="bottom" />
+      <ContactSection />
       <Footer />
     </>
   );
