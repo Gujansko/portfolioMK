@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Noto_Sans } from "@next/font/google";
 
-const ubuntu = Noto_Sans({ weight: "500", subsets: ["latin"] });
+const font = Noto_Sans({ weight: "500", subsets: ["latin"] });
 
 export const metadata = {
   title: "Portfolio",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-pt-[3.4rem] scroll-smooth">
       <body
-        className={`${ubuntu.className} m-0 box-border overflow-x-hidden bg-cyan-950 p-0 text-white`}
+        className={`${font.className} m-0 box-border overflow-x-hidden bg-cyan-950 p-0 text-white`}
       >
         {children}
       </body>

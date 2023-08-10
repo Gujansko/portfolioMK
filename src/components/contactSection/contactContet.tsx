@@ -19,7 +19,7 @@ export default function ContactContent() {
         duration={1.5}
         delay={0.6}
       >
-        <div className="flex flex-wrap items-center justify-center gap-1">
+        <div className="flex flex-wrap items-center justify-center gap-2">
           <Mail width={30} height={30} />
           <p className="break-all text-2xl font-medium">
             Email Address - mateusz.klos150401@gmail.com
