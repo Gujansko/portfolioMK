@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import DropdownItem from "./dropdownItem";
 import DropdownTrigger from "./dropdownTrigger";
 import DropdownContent from "./dropdownContent";
-import { navSections } from "../navbar/navSections";
+import { navSections } from "../navSections";
 import useClickOutside from "@/utility/useClickOutside";
-import AnimateWrapper from "../animations/animateWrapper";
+import AnimateWrapper from "../../animations/animateWrapper";
 
 export default function DropdownNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +21,12 @@ export default function DropdownNav() {
       animate={isOpen ? "open" : "closed"}
       ref={dropdownMenuRef}
     >
-      <AnimateWrapper animationOccurence="once" animationType="fadeInTop" duration={0.4} delay={0.15}>
+      <AnimateWrapper
+        animationOccurence="once"
+        animationType="fadeInTop"
+        duration={0.4}
+        delay={0.15}
+      >
         <DropdownTrigger setDropdownState={setIsOpen} />
       </AnimateWrapper>
       <DropdownContent dropdownState={isOpen}>

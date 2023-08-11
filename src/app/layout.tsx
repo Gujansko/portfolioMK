@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="scroll-pt-[3.4rem] scroll-smooth">
+    <html lang="en">
       <body
         className={`${font.className} m-0 box-border overflow-x-hidden bg-cyan-950 p-0 text-white`}
       >

@@ -21,3 +21,8 @@
   border-radius: 3px;
   background-color: #155e75;
 }
+
+html {
+  scroll-padding-top: var(--nav-height, 3.4rem);
+  scroll-behavior: smooth;
+}

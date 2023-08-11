@@ -1,6 +1,6 @@
 import DropdownNav from "../dropdownNav/dropdownNav";
 import useScreenWidth from "@/utility/useScreenWidth";
-import NavLink from "../navbar/navLink";
+import NavLink from "../navLink";
 
 export default function Sections() {
   const screenWidth = useScreenWidth();

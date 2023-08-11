@@ -1,5 +1,5 @@
 "use client";
-import Sections from "../sections/sections";
+import Sections from "./sections/sections";
 import NavLink from "./navLink";
 
 export default function Navbar() {
