@@ -18,7 +18,7 @@ export default async function ExperienceSection() {
           Experience
         </h1>
       </AnimateWrapper>
-      <div className="flex items-center justify-around">
+      <div className="flex flex-wrap items-center justify-around">
         {experiences.map((experience, idx) => (
           <AnimateWrapper
             animationOccurence="whenInView"
