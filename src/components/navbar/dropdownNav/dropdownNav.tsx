@@ -27,7 +27,7 @@ export default function DropdownNav() {
         duration={0.4}
         delay={0.15}
       >
-        <DropdownTrigger setDropdownState={setIsOpen} />
+        <DropdownTrigger setDropdownState={setIsOpen} dropdownState={isOpen} />
       </AnimateWrapper>
       <DropdownContent dropdownState={isOpen}>
         {navSections.map((section, idx) => (
