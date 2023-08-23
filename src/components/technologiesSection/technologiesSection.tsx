@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { technologies } from "./technologies";
 import AnimateWrapper from "../animations/animateWrapper";
@@ -15,7 +14,7 @@ export default function TechnologiesSection() {
         duration={2}
         delay={0.5}
       >
-        <h1 className="pb-16 text-4xl font-bold tracking-wide vsm:text-5xl xl:text-6xl">
+        <h1 className="flex items-center justify-center pb-16 text-4xl font-bold tracking-wide vsm:text-5xl xl:text-6xl">
           Used Technologies
         </h1>
       </AnimateWrapper>

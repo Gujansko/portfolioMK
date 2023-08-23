@@ -1,3 +1,4 @@
+"use client";
 import DropdownNav from "../dropdownNav/dropdownNav";
 import useScreenWidth from "@/utility/useScreenWidth";
 import NavLink from "../navLink";

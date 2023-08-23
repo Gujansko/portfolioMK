@@ -3,7 +3,7 @@ export default function WaveDivider({
 }: {
   placement: "top" | "bottom";
 }) {
-  const fixAlign = placement === "top" ? "1px" : "-1px";
+  const fixAlign = placement === "top" ? "2px" : "-2px";
   const topColor = placement === "top" ? "#083344" : "#f8fafc";
   const bottomColor = placement === "top" ? "#f8fafc" : "#083344";
 
