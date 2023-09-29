@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="flex flex-col justify-center p-8 text-center text-base bg-slate-50 text-slate-950">
       <AnimateWrapper
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         animationType="fadeInLeft"
         duration={1.5}
         delay={0.8}

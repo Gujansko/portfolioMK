@@ -22,7 +22,7 @@ export default function DropdownNav() {
       ref={dropdownMenuRef}
     >
       <AnimateWrapper
-        animationOccurence="once"
+        animationOccurrence="once"
         animationType="fadeInTop"
         duration={0.4}
         delay={0.15}

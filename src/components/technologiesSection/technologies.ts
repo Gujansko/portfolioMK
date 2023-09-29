@@ -45,6 +45,10 @@ export const technologies: technology[] = [
     image: "/technologiesSection/shadcn.png",
   },
   {
+    name: "Firebase",
+    image: "/technologiesSection/firebase.png",
+  },
+  {
     name: "Framer Motion",
     image: "/technologiesSection/framer.png",
   },

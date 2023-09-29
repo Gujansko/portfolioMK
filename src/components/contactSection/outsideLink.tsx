@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactNode } from "react";
 
 export default function OutsideLink({
   href,
@@ -8,7 +8,7 @@ export default function OutsideLink({
 }: {
   href: string;
   containsImage: boolean;
-  children: React.ReactNode;
+  children: ReactNode;
   underlineColor: string;
 }) {
   return (

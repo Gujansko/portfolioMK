@@ -4,25 +4,25 @@ import AnimateWrapper from "../animations/animateWrapper";
 
 export default function TechnologiesSection() {
   return (
-    <div
+    <section
       className="bg-slate-50 p-10 text-center text-slate-950 xl:p-20"
       id="technologies"
     >
       <AnimateWrapper
         animationType="fadeInBottom"
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         duration={2}
         delay={0.5}
       >
-        <h1 className="flex items-center justify-center pb-16 text-4xl font-bold tracking-wide vsm:text-5xl xl:text-6xl">
+        <h2 className="flex items-center justify-center pb-16 text-4xl font-bold tracking-wide vsm:text-5xl xl:text-6xl">
           Used Technologies
-        </h1>
+        </h2>
       </AnimateWrapper>
       <div className="flex flex-wrap items-center justify-center gap-20">
         {technologies.map((technology, idx) => (
           <AnimateWrapper
             animationType="fadeInBottom"
-            animationOccurence="whenInView"
+            animationOccurrence="whenInView"
             duration={2}
             delay={0.1 * (idx + 1)}
             key={idx}
@@ -36,6 +36,6 @@ export default function TechnologiesSection() {
           </AnimateWrapper>
         ))}
       </div>
-    </div>
+    </section>
   );
 }

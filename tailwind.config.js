@@ -16,9 +16,21 @@ module.exports = {
       },
     },
     extend: {
+      keyframes: {
+        swingLeft: {
+          "0%": { transform: "translateX(0px)" },
+          "100%": { transform: "translateX(-7px)" },
+        },
+        swingRight: {
+          "0%": { transform: "translateX(0px)" },
+          "100%": { transform: "translateX(7px)" },
+        },
+      },
       animation: {
         "spin-slow": "spin 8s ease-in-out infinite",
         "spin-slowest": "spin 16s ease-in-out infinite",
+        "swing-left": "swingLeft 0.5s ease-in-out infinite alternate",
+        "swing-right": "swingRight 0.5s ease-in-out infinite alternate",
       },
       screens: {
         vsm: "480px",

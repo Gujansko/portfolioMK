@@ -1,6 +1,7 @@
-import { experience } from "@/components/experienceSection/experience";
+import OutsideLink from "@/components/contactSection/outsideLink";
+import { Experience } from "@/components/experienceSection/experience";
 
-export default function ExperienceCard(experienceDetails: experience) {
+export default function ExperienceCard(experienceDetails: Experience) {
   return (
     <div
       className={`relative m-8 flex max-w-lg flex-col items-center justify-start bg-slate-50 p-8 before:absolute before:h-[220%] before:w-[40%] ${experienceDetails.backgroundColor} group overflow-hidden rounded-xl p-4 before:inset-x-[30%] before:inset-y-[-60%] before:animate-spin-slowest after:absolute after:inset-1 after:rounded-xl after:bg-slate-50 before:vsm:animate-spin-slow`}
@@ -11,6 +12,19 @@ export default function ExperienceCard(experienceDetails: experience) {
         >
           {experienceDetails.title}
         </div>
+        {experienceDetails.link ? (
+          <OutsideLink
+            href={experienceDetails.link}
+            containsImage={false}
+            underlineColor={"decoration-[#0000EE]"}
+          >
+            <span className="pb-1 text-lg text-[#0000EE] hover:pt-1">
+              Link to Project
+            </span>
+          </OutsideLink>
+        ) : (
+          <></>
+        )}
         <div className="mb-4 text-base font-medium capitalize text-slate-800">
           {`${experienceDetails.position}: ${experienceDetails.date}`}
         </div>

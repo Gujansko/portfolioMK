@@ -1,42 +1,44 @@
+"use client";
+import { ReactNode } from "react";
 import {
   animationVariants,
   animationType,
   getAnimationVariants,
 } from "./animationVariants";
-import AnimateInView from "./animateInView";
-import AnimateOnce from "./animateOnce";
+import { motion } from "framer-motion";
 
 export default function AnimateWrapper({
   children,
   animationType,
   duration,
   delay,
-  animationOccurence,
+  animationOccurrence,
+  className,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
   animationType: animationType;
   duration: number;
   delay: number;
-  animationOccurence: "once" | "whenInView";
+  animationOccurrence: "once" | "whenInView";
+  className?: string;
 }) {
-  const variants: animationVariants = getAnimationVariants(
-    animationType,
-    duration,
-    delay
-  );
+  const variants: animationVariants = getAnimationVariants(animationType);
   return (
-    <div
-      className={`${
-        animationType === "fadeInLeft" || animationType === "fadeInRight"
-          ? "overflow-hidden"
-          : ""
-      }`}
+    <motion.div
+      className={`overflow-hidden ${className ? className : ""}`}
+      initial={variants.notInView}
+      whileInView={
+        animationOccurrence === "whenInView" ? variants.inView : undefined
+      }
+      animate={animationOccurrence === "once" ? variants.inView : undefined}
+      transition={{
+        duration: duration,
+        delay: delay,
+        type: "spring",
+      }}
+      viewport={{ once: true }}
     >
-      {animationOccurence === "once" ? (
-        <AnimateOnce variants={variants}>{children}</AnimateOnce>
-      ) : (
-        <AnimateInView variants={variants}>{children}</AnimateInView>
-      )}
-    </div>
+      {children}
+    </motion.div>
   );
 }

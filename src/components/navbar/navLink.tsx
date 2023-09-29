@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import AnimateWrapper from "../animations/animateWrapper";
 import { animationType } from "../animations/animationVariants";
 import { Button } from "../ui/button";
@@ -11,11 +12,11 @@ export default function navLink({
   animationType: animationType;
   duration: number;
   delay: number;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <AnimateWrapper
-      animationOccurence="once"
+      animationOccurrence="once"
       animationType={animationType}
       duration={duration}
       delay={delay}

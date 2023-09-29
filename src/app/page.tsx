@@ -10,8 +10,7 @@ import TechnologiesSection from "@/components/technologiesSection/technologiesSe
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
+    <main>
       <HomeSection />
       <WaveDivider placement="top" />
       <AboutSection />
@@ -22,6 +21,6 @@ export default function Home() {
       <CurveDivider placement="bottom" />
       <ContactSection />
       <Footer />
-    </>
+    </main>
   );
 }
