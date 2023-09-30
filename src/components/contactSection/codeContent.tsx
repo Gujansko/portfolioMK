@@ -6,7 +6,7 @@ export default function CodeContent() {
   return (
     <div className="flex flex-col flex-wrap items-center gap-10">
       <AnimateWrapper
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         animationType="fadeInTop"
         duration={1.5}
         delay={0.5}
@@ -14,10 +14,11 @@ export default function CodeContent() {
         <p>You can checkout my work on Github:</p>
       </AnimateWrapper>
       <AnimateWrapper
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         animationType="fadeInTop"
         duration={1.5}
         delay={0.6}
+        className="overflow-visible"
       >
         <OutsideLink
           href={"https://github.com/Gujansko/portfolioMK"}
@@ -29,10 +30,11 @@ export default function CodeContent() {
         </OutsideLink>
       </AnimateWrapper>
       <AnimateWrapper
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         animationType="fadeInTop"
         duration={1.5}
         delay={0.8}
+        className="overflow-visible"
       >
         <OutsideLink
           href={"https://github.com/Gujansko"}

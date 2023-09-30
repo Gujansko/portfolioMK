@@ -1,5 +1,6 @@
 import Image, { StaticImageData } from "next/image";
 import { Variants, motion } from "framer-motion";
+import { Dispatch, SetStateAction } from "react";
 
 export default function DropdownItem({
   icon,
@@ -10,7 +11,7 @@ export default function DropdownItem({
   icon: StaticImageData;
   text: string;
   id: string;
-  setDropdownState: React.Dispatch<React.SetStateAction<boolean>>;
+  setDropdownState: Dispatch<SetStateAction<boolean>>;
 }) {
   const itemVariants: Variants = {
     open: {

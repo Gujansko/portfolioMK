@@ -5,46 +5,43 @@ import { textContent } from "./textContent";
 
 export default function AboutSection() {
   return (
-    <div className="flex min-h-screen bg-slate-50" id="about">
+    <section className="flex min-h-screen bg-slate-50" id="about">
       <div className="mx-auto my-8 grid w-[90%] grid-cols-1 justify-items-center 2xl:my-0 2xl:grid-cols-2 2xl:items-center">
         <div className="w-full text-center 2xl:ml-14 2xl:text-left">
           <AnimateWrapper
-            animationOccurence="whenInView"
+            animationOccurrence="whenInView"
             animationType="fadeInLeft"
             duration={2}
             delay={0}
           >
-            <h1 className="text-4xl font-bold tracking-wide text-slate-950 vsm:text-5xl lg:text-6xl">
+            <h2 className="text-4xl font-bold tracking-wide text-slate-950 vsm:text-5xl lg:text-6xl">
               About
-            </h1>
+            </h2>
           </AnimateWrapper>
-          <div className="mt-4 text-xl font-medium text-slate-900">
+          <div>
             {textContent.map((text, idx) => (
               <AnimateWrapper
-                animationOccurence="whenInView"
+                animationOccurrence="whenInView"
                 animationType="fadeInLeft"
                 duration={2}
                 delay={0.1 * (idx + 1)}
                 key={idx}
+                className="mt-4 text-xl font-medium text-slate-900"
               >
-                <p
-                  className={`${idx === textContent.length - 1 ? "" : "mb-4"}`}
-                >
-                  {text}
-                </p>
+                <p className="last:mb-4">{text}</p>
               </AnimateWrapper>
             ))}
           </div>
         </div>
         <AnimateWrapper
-          animationOccurence="whenInView"
-          animationType="fadeInRight"
+          animationOccurrence="whenInView"
+          animationType="fadeInBottom"
           duration={2}
           delay={0.8}
         >
-          <Carousel slides={slides} autoPlay={true} />
+          <Carousel slides={slides} autoPlay={false} />
         </AnimateWrapper>
       </div>
-    </div>
+    </section>
   );
 }

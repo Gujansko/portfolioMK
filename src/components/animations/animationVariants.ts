@@ -11,31 +11,24 @@ export type animationType =
 
 export function getAnimationVariants(
   animationType: animationType,
-  duration: number,
-  delay: number
 ): animationVariants {
   switch (animationType) {
     case "fadeInBottom":
-      return fadeInBottom(duration, delay);
+      return fadeInBottom();
     case "fadeInTop":
-      return fadeInTop(duration, delay);
+      return fadeInTop();
     case "fadeInLeft":
-      return fadeInLeft(duration, delay);
+      return fadeInLeft();
     case "fadeInRight":
-      return fadeInRight(duration, delay);
+      return fadeInRight();
   }
 }
 
-function fadeInBottom(duration: number, delay: number): animationVariants {
+function fadeInBottom(): animationVariants {
   return {
     inView: {
       opacity: 1,
       y: 0,
-      transition: {
-        type: "spring",
-        duration: duration,
-        delay: delay,
-      },
     },
     notInView: {
       opacity: 0,
@@ -44,16 +37,11 @@ function fadeInBottom(duration: number, delay: number): animationVariants {
   };
 }
 
-function fadeInTop(duration: number, delay: number): animationVariants {
+function fadeInTop(): animationVariants {
   return {
     inView: {
       opacity: 1,
       y: 0,
-      transition: {
-        type: "spring",
-        duration: duration,
-        delay: delay,
-      },
     },
     notInView: {
       opacity: 0,
@@ -62,16 +50,11 @@ function fadeInTop(duration: number, delay: number): animationVariants {
   };
 }
 
-function fadeInLeft(duration: number, delay: number): animationVariants {
+function fadeInLeft(): animationVariants {
   return {
     inView: {
       opacity: 1,
       x: 0,
-      transition: {
-        type: "spring",
-        duration: duration,
-        delay: delay,
-      },
     },
     notInView: {
       opacity: 0,
@@ -80,16 +63,11 @@ function fadeInLeft(duration: number, delay: number): animationVariants {
   };
 }
 
-function fadeInRight(duration: number, delay: number): animationVariants {
+function fadeInRight(): animationVariants {
   return {
     inView: {
       opacity: 1,
       x: 0,
-      transition: {
-        type: "spring",
-        duration: duration,
-        delay: delay,
-      },
     },
     notInView: {
       opacity: 0,

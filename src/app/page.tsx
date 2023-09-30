@@ -1,4 +1,3 @@
-import Navbar from "@/components/navbar/navbar";
 import HomeSection from "@/components/homeSection/homeSection";
 import WaveDivider from "@/components/dividers/waveDivider";
 import AboutSection from "@/components/aboutSection/aboutSection";
@@ -10,8 +9,7 @@ import TechnologiesSection from "@/components/technologiesSection/technologiesSe
 
 export default function Home() {
   return (
-    <>
-      <Navbar />
+    <main>
       <HomeSection />
       <WaveDivider placement="top" />
       <AboutSection />
@@ -22,6 +20,6 @@ export default function Home() {
       <CurveDivider placement="bottom" />
       <ContactSection />
       <Footer />
-    </>
+    </main>
   );
 }

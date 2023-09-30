@@ -26,3 +26,11 @@ html {
   scroll-padding-top: var(--nav-height, 3.4rem);
   scroll-behavior: smooth;
 }
+
+.typed-cursor {
+  color: #155e75;
+}
+
+.card::before {
+  background-color: var(--before-bg-color);
+}

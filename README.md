@@ -1,13 +1,13 @@
 # Personal Frontend Developer Portfolio 🧑🏻‍💻
 
-## This portfolio was made to create individual space to share progress in obtaining new competiences in academic and work environments 👨‍🎓
+## This portfolio was made to create individual space to share progress in obtaining new competences in academic and work environments 👨‍🎓
 
 - ### Used Technologies ⚙️
 
 1. Next.js
 2. TypeScript
 3. TailwindCSS
-4. Prisma
+4. Firebase
 5. shadcn
 6. Framer Motion
 7. react intersection observer
@@ -26,4 +26,4 @@
 2. yarn dev
 3. pnpm dev
 
-- ### Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

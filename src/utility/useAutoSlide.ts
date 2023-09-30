@@ -1,9 +1,9 @@
 "use client";
 import { StaticImageData } from "next/image";
-import { useEffect } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 
 export default function useAutoSlide(
-  setCurrentSlide: React.Dispatch<React.SetStateAction<number>>,
+  setCurrentSlide: Dispatch<SetStateAction<number>>,
   slides: StaticImageData[],
   autoPlay?: boolean,
   interval?: number

@@ -1,9 +1,9 @@
-import ContactContent from "./contactContet";
+import ContactContent from "./contactContent";
 import CodeContent from "./codeContent";
 
 export default function ContactSection() {
   return (
-    <div
+    <section
       className="bg-cyan-950 pb-24 pt-12 text-center font-semibold text-slate-50"
       id="contact"
     >
@@ -11,6 +11,6 @@ export default function ContactSection() {
         <ContactContent />
         <CodeContent />
       </div>
-    </div>
+    </section>
   );
 }

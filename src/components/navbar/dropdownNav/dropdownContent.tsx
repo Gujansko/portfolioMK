@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
+import { ReactNode } from "react";
 
 export default function DropdownContent({
   dropdownState,
   children,
 }: {
   dropdownState: boolean;
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   return (
     <motion.ul

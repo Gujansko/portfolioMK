@@ -6,18 +6,19 @@ export default function ContactContent() {
   return (
     <div className="flex flex-col flex-wrap items-center gap-10">
       <AnimateWrapper
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         animationType="fadeInTop"
         duration={1.5}
         delay={0.5}
       >
-        <h1>You can contact me via:</h1>
+        <h2>You can contact me via:</h2>
       </AnimateWrapper>
       <AnimateWrapper
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         animationType="fadeInTop"
         duration={1.5}
         delay={0.6}
+        className="overflow-visible"
       >
         <div className="flex flex-wrap items-center justify-center gap-2">
           <Mail width={30} height={30} />
@@ -27,10 +28,11 @@ export default function ContactContent() {
         </div>
       </AnimateWrapper>
       <AnimateWrapper
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         animationType="fadeInTop"
         duration={1.5}
         delay={0.7}
+        className="overflow-visible"
       >
         <OutsideLink
           href={"mailto:mateusz.klos150401@gmail.com"}
@@ -42,10 +44,11 @@ export default function ContactContent() {
         </OutsideLink>
       </AnimateWrapper>
       <AnimateWrapper
-        animationOccurence="whenInView"
+        animationOccurrence="whenInView"
         animationType="fadeInTop"
         duration={1.5}
         delay={0.8}
+        className="overflow-visible"
       >
         <OutsideLink
           href={"https://www.linkedin.com/in/mateusz-klos-it-pl/"}
