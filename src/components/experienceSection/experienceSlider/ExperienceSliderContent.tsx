@@ -16,12 +16,18 @@ export default function ExperienceSliderContent({
           key={idx}
         >
           {yearlyExperience.length === 0 ? (
-            <div className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-cyan-800 sm:px-10 xl:px-32">
+            <AnimateWrapper
+              animationOccurrence="whenInView"
+              animationType="fadeInTop"
+              duration={2}
+              delay={0.3}
+              className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-cyan-800 sm:px-10 xl:px-32"
+            >
               <CalendarClock width={100} height={100} />
               <span className="capitalize text-slate-50">
                 Nothing happened this year so far
               </span>
-            </div>
+            </AnimateWrapper>
           ) : (
             <>
               {yearlyExperience.map((experience, idx) => (

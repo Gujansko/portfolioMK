@@ -1,4 +1,3 @@
-import OutsideLink from "@/components/contactSection/outsideLink";
 import { Experience } from "@/components/experienceSection/experience";
 
 export default function ExperienceCard(experienceDetails: Experience) {

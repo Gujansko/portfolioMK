@@ -6,6 +6,7 @@ import { Loader2, XCircle } from "lucide-react";
 import SliderController from "./SliderController";
 import { CREATION_YEAR } from "@/constants/constants";
 import ExperienceSliderContent from "./ExperienceSliderContent";
+import AnimateWrapper from "@/components/animations/animateWrapper";
 
 export default function ExperienceSlider() {
   const [experiences, setExperiences] = useState<Experience[][]>([[]]);
@@ -39,20 +40,32 @@ export default function ExperienceSlider() {
         }}
       >
         {isFetching ? (
-          <div className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-cyan-800 sm:px-10 xl:px-32">
+          <AnimateWrapper
+            animationType={"fadeInBottom"}
+            duration={2}
+            delay={0.3}
+            animationOccurrence="whenInView"
+            className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-cyan-800 sm:px-10 xl:px-32"
+          >
             <Loader2 width={100} height={100} className="animate-spin" />
             <span className="text-slate-50">Loading</span>
-          </div>
+          </AnimateWrapper>
         ) : (
           <></>
         )}
         {isFetchingError ? (
-          <div className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-red-600 sm:px-10 xl:px-32">
+          <AnimateWrapper
+            animationType={"fadeInBottom"}
+            duration={2}
+            delay={0.3}
+            animationOccurrence="whenInView"
+            className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-red-600 sm:px-10 xl:px-32"
+          >
             <XCircle width={100} height={100} />
             <span className="text-slate-50">
               Couldn't load data please try again later
             </span>
-          </div>
+          </AnimateWrapper>
         ) : (
           <></>
         )}

@@ -1,6 +1,6 @@
 import { Dispatch, SetStateAction, MutableRefObject } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { CREATION_YEAR } from "@/constants/constants";
 
 export default function SliderController({
