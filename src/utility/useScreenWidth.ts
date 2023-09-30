@@ -1,16 +1,16 @@
 "use client";
 import { useEffect, useState } from "react";
-import setScrollPadding from "./setScrollPadding";
+import setCustomProperty from "./setCustomProperty";
 
 export default function useScreenWidth() {
   function handleResize() {
-    setScrollPadding();
+    setCustomProperty("navbar", "--nav-height");
     setScreenWidth(window.innerWidth);
   }
   const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-    setScrollPadding();
+    setCustomProperty("navbar", "--nav-height");
     setScreenWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
 

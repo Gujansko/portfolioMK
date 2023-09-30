@@ -12,6 +12,7 @@ export default function TypeWriter() {
       typeSpeed: 100,
       backSpeed: 100,
       startDelay: 2000,
+      backDelay: 1500,
       loop: true,
     });
 
