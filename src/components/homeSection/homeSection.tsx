@@ -9,7 +9,7 @@ export default function HomeSection() {
       id="home"
       className="relative flex min-h-screen flex-col items-center justify-around text-center uppercase tracking-widest lg:flex-row"
     >
-      <div className="absolute inset-0 -z-10 bg-slate-50 [clip-path:polygon(0%_0%,0%_85%,65%_0%)]" />
+      <div className="absolute inset-0 -z-10 bg-slate-50 [clip-path:polygon(0%_0%,0%_78%,62%_0%)]" />
       <div>
         <h2 className="text-7xl font-bold text-slate-50 mix-blend-difference transition-all duration-500 vsm:text-8xl sm:text-9xl">
           Hello
