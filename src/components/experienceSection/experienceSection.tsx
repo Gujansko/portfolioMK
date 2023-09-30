@@ -3,7 +3,7 @@ import ExperienceSlider from "./experienceSlider/ExperienceSlider";
 
 export default async function ExperienceSection() {
   return (
-    <section className="flex flex-col" id="experience">
+    <section id="experience" className="flex flex-col">
       <AnimateWrapper
         animationOccurrence="whenInView"
         animationType="fadeInTop"
