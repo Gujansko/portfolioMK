@@ -2,6 +2,7 @@ import { Dispatch, SetStateAction, MutableRefObject } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { CREATION_YEAR } from "@/constants/constants";
+import scrollToId from "@/utility/scrollToId";
 
 export default function SliderController({
   maxYear,
@@ -22,7 +23,10 @@ export default function SliderController({
             ? "pointer-events-none opacity-0"
             : "pointer-events-auto opacity-100"
         }`}
-        onClick={() => setDisplayedYear((prevValue) => prevValue - 1)}
+        onClick={() => {
+          setDisplayedYear((prevValue) => prevValue - 1);
+          scrollToId("experience-heading");
+        }}
       />
       <motion.span
         key={displayedYear}
@@ -40,7 +44,10 @@ export default function SliderController({
             ? "pointer-events-none opacity-0"
             : "pointer-events-auto opacity-100"
         }`}
-        onClick={() => setDisplayedYear((prevValue) => prevValue + 1)}
+        onClick={() => {
+          setDisplayedYear((prevValue) => prevValue + 1);
+          scrollToId("experience-heading");
+        }}
       />
     </div>
   );
