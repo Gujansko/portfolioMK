@@ -35,7 +35,7 @@ export default function HomeSection() {
           duration={2}
           delay={0.6}
         >
-          <h2 className="max-w-[500px] px-4 pt-8 text-2xl font-bold italic text-slate-50 tiny:text-3xl vsm:text-4xl xl:text-5xl">
+          <h2 className="h-[200px] max-w-[500px] px-4 pt-8 text-center text-2xl font-bold italic text-slate-50 tiny:text-3xl vsm:text-4xl xl:text-5xl">
             <TypeWriter />
           </h2>
         </AnimateWrapper>
