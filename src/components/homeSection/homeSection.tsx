@@ -7,7 +7,7 @@ export default function HomeSection() {
   return (
     <section
       id="home"
-      className="relative flex min-h-screen flex-col items-center justify-around text-center uppercase tracking-widest lg:flex-row"
+      className="relative flex flex-col items-center justify-around text-center uppercase tracking-widest lg:flex-row"
     >
       <div className="absolute inset-0 -z-10 bg-slate-50 [clip-path:polygon(0%_0%,0%_78%,62%_0%)]" />
       <div>

@@ -5,7 +5,7 @@ import { textContent } from "./textContent";
 
 export default function AboutSection() {
   return (
-    <section className="flex min-h-screen bg-slate-50" id="about">
+    <section className="flex bg-slate-50" id="about">
       <div className="mx-auto my-8 grid w-[90%] grid-cols-1 justify-items-center 2xl:my-0 2xl:grid-cols-2 2xl:items-center">
         <div className="w-full text-center 2xl:ml-14 2xl:text-left">
           <AnimateWrapper
