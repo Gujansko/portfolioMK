@@ -38,7 +38,7 @@ export default function Carousel({
           <Image src={slide} alt={"slide"} key={idx} draggable="false" />
         ))}
       </div>
-      <div className="absolute bottom-2 left-0 right-0 flex items-center justify-center gap-2">
+      <div className="absolute bottom-2 left-0 right-0 flex items-center justify-center gap-3">
         {slides.map((_, idx) => (
           <div
             className={`h-4 w-4 cursor-pointer rounded-full bg-cyan-800 transition-all duration-500 ease-in-out ${

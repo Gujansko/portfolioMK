@@ -30,3 +30,7 @@ html {
 .typed-cursor {
   color: #155e75;
 }
+
+.card::before {
+  background-color: var(--before-bg-color);
+}

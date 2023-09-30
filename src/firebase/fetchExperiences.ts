@@ -27,12 +27,16 @@ export default async function fetchExperiences() {
       link: doc.link,
       date: doc.date,
       description: doc.description,
-      backgroundColor: doc.backgroundColor,
-      underlineColor: doc.underlineColor,
+      color: doc.color,
     };
     const index = experience.year - CREATION_YEAR;
     experiences[index].push(experience);
   });
-
-  return {experiences, maxYear};
+  experiences.forEach((year) => {
+    year.sort(
+      (a, b) =>
+        parseInt(a.date.substring(0, 2)) - parseInt(b.date.substring(0, 2))
+    );
+  });
+  return { experiences, maxYear };
 }

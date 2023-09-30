@@ -20,7 +20,6 @@ export default function ExperienceSlider() {
     fetchExperiences()
       .then((data) => {
         setExperiences(data.experiences);
-        console.log(data.experiences);
         maxYear.current = data.maxYear;
       })
       .catch(() => {
@@ -49,7 +48,7 @@ export default function ExperienceSlider() {
         )}
         {isFetchingError ? (
           <div className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-red-600 sm:px-10 xl:px-32">
-            <XCircle />
+            <XCircle width={100} height={100} />
             <span className="text-slate-50">
               Couldn't load data please try again later
             </span>
@@ -63,11 +62,15 @@ export default function ExperienceSlider() {
           <></>
         )}
       </div>
-      <SliderController
-        maxYear={maxYear}
-        displayedYear={displayedYear}
-        setDisplayedYear={setDisplayedYear}
-      />
+      {isFetching === false ? (
+        <SliderController
+          maxYear={maxYear}
+          displayedYear={displayedYear}
+          setDisplayedYear={setDisplayedYear}
+        />
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
