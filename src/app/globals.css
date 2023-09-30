@@ -38,3 +38,8 @@ html {
 #experience {
   min-height: calc(100svh - var(--nav-height, 3.4rem));
 }
+
+#scrolling-element {
+  transform: translateY(var(--scrolling-element-offset));
+  transition: all 0.1s linear;
+}
