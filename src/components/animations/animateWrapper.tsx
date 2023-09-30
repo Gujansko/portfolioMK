@@ -14,6 +14,7 @@ export default function AnimateWrapper({
   delay,
   animationOccurrence,
   className,
+  id,
 }: {
   children: ReactNode;
   animationType: animationType;
@@ -21,11 +22,13 @@ export default function AnimateWrapper({
   delay: number;
   animationOccurrence: "once" | "whenInView";
   className?: string;
+  id?: string;
 }) {
   const variants: animationVariants = getAnimationVariants(animationType);
   return (
     <motion.div
       className={`overflow-hidden ${className ? className : ""}`}
+      id={id ? id : ""}
       initial={variants.notInView}
       whileInView={
         animationOccurrence === "whenInView" ? variants.inView : undefined
