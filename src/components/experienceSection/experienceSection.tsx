@@ -10,7 +10,10 @@ export default async function ExperienceSection() {
         duration={2}
         delay={0.5}
       >
-        <h2 className="py-4 text-center text-4xl font-bold tracking-wide text-slate-50 vsm:text-5xl xl:mb-14 xl:mt-0 xl:text-6xl">
+        <h2
+          className="py-4 text-center text-4xl font-bold tracking-wide text-slate-50 vsm:text-5xl xl:mb-14 xl:mt-0 xl:text-6xl"
+          id="experience-heading"
+        >
           Experience
         </h2>
       </AnimateWrapper>
