@@ -26,7 +26,7 @@ export default function HomeSection() {
             src={face}
             alt="face"
             priority={true}
-            className="mx-auto max-w-[90%] rounded-full"
+            className="mx-auto max-w-[90%] rounded-full max-lg:pt-8"
           />
         </AnimateWrapper>
         <AnimateWrapper

@@ -45,7 +45,7 @@ export default function ExperienceSlider() {
             duration={2}
             delay={0.3}
             animationOccurrence="whenInView"
-            className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-cyan-800 sm:px-10 xl:px-32"
+            className="flex min-w-full flex-col items-center justify-end gap-12 px-4 py-6 text-center text-2xl text-cyan-800 sm:px-10 2xl:justify-center xl:px-32"
           >
             <Loader2 width={100} height={100} className="animate-spin" />
             <span className="text-slate-50">Loading</span>
@@ -59,7 +59,7 @@ export default function ExperienceSlider() {
             duration={2}
             delay={0.3}
             animationOccurrence="whenInView"
-            className="flex min-w-full flex-col items-center justify-center gap-12 px-4 py-6 text-2xl text-red-600 sm:px-10 xl:px-32"
+            className="flex min-w-full flex-col items-center justify-end gap-12 px-4 py-6 text-center text-2xl text-red-600 sm:px-10 2xl:justify-center xl:px-32"
           >
             <XCircle width={100} height={100} />
             <span className="text-slate-50">
@@ -69,13 +69,13 @@ export default function ExperienceSlider() {
         ) : (
           <></>
         )}
-        {isFetching === false ? (
+        {!isFetching && !isFetchingError ? (
           <ExperienceSliderContent experiences={experiences} />
         ) : (
           <></>
         )}
       </div>
-      {isFetching === false ? (
+      {!isFetching && !isFetchingError ? (
         <SliderController
           maxYear={maxYear}
           displayedYear={displayedYear}
