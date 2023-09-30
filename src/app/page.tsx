@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/navbar/Navbar";
 import HomeSection from "@/components/homeSection/homeSection";
 import WaveDivider from "@/components/dividers/waveDivider";
 import AboutSection from "@/components/aboutSection/aboutSection";

@@ -17,7 +17,7 @@ export default function SliderController({
       <ChevronLeft
         width={30}
         height={30}
-        className={`cursor-pointer transition-all duration-500 ease-in-out ${
+        className={`cursor-pointer transition-all duration-500 ease-in-out hover:animate-swing-left ${
           displayedYear === CREATION_YEAR
             ? "pointer-events-none opacity-0"
             : "pointer-events-auto opacity-100"
@@ -35,7 +35,7 @@ export default function SliderController({
       <ChevronRight
         width={30}
         height={30}
-        className={`cursor-pointer transition-all duration-500 ease-in-out ${
+        className={`cursor-pointer transition-all duration-500 ease-in-out hover:animate-swing-right ${
           displayedYear === maxYear.current
             ? "pointer-events-none opacity-0"
             : "pointer-events-auto opacity-100"

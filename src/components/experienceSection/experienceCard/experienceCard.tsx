@@ -5,7 +5,9 @@ export default function ExperienceCard(experienceDetails: Experience) {
   return (
     <div
       className={`card group relative m-8 flex max-w-lg flex-col items-center justify-start overflow-hidden rounded-xl bg-slate-50 p-8 before:absolute before:inset-x-[30%] before:inset-y-[-60%] before:h-[220%] before:w-[40%] before:animate-spin-slowest after:absolute after:inset-1 after:rounded-xl after:bg-slate-50 before:vsm:animate-spin-slow`}
-      style={{ "--before-bg-color": experienceDetails.color } as React.CSSProperties}
+      style={
+        { "--before-bg-color": experienceDetails.color } as React.CSSProperties
+      }
     >
       <div className="z-10">
         <div
@@ -15,15 +17,13 @@ export default function ExperienceCard(experienceDetails: Experience) {
           {experienceDetails.title}
         </div>
         {experienceDetails.link ? (
-          <OutsideLink
+          <a
             href={experienceDetails.link}
-            containsImage={false}
-            underlineColor={"decoration-[#0000EE]"}
+            target="_blank"
+            className="inline-block text-base text-slate-950 underline decoration-slate-950 decoration-2 underline-offset-[6px] transition-all duration-300 ease-in-out hover:scale-105 hover:pl-1"
           >
-            <span className="pb-1 text-lg text-[#0000EE] hover:pt-1">
-              Link to Project
-            </span>
-          </OutsideLink>
+            Link to Project
+          </a>
         ) : (
           <></>
         )}

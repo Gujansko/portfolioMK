@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar/navbar";
+import Navbar from "@/components/navbar/Navbar";
 import "./globals.css";
 import { Noto_Sans } from "next/font/google";
 

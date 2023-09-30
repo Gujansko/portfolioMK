@@ -18,6 +18,7 @@ export default function CodeContent() {
         animationType="fadeInTop"
         duration={1.5}
         delay={0.6}
+        className="overflow-visible"
       >
         <OutsideLink
           href={"https://github.com/Gujansko/portfolioMK"}
@@ -33,6 +34,7 @@ export default function CodeContent() {
         animationType="fadeInTop"
         duration={1.5}
         delay={0.8}
+        className="overflow-visible"
       >
         <OutsideLink
           href={"https://github.com/Gujansko"}

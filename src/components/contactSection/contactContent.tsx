@@ -18,6 +18,7 @@ export default function ContactContent() {
         animationType="fadeInTop"
         duration={1.5}
         delay={0.6}
+        className="overflow-visible"
       >
         <div className="flex flex-wrap items-center justify-center gap-2">
           <Mail width={30} height={30} />
@@ -31,6 +32,7 @@ export default function ContactContent() {
         animationType="fadeInTop"
         duration={1.5}
         delay={0.7}
+        className="overflow-visible"
       >
         <OutsideLink
           href={"mailto:mateusz.klos150401@gmail.com"}
@@ -46,6 +48,7 @@ export default function ContactContent() {
         animationType="fadeInTop"
         duration={1.5}
         delay={0.8}
+        className="overflow-visible"
       >
         <OutsideLink
           href={"https://www.linkedin.com/in/mateusz-klos-it-pl/"}
