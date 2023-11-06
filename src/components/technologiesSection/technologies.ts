@@ -56,4 +56,16 @@ export const technologies: technology[] = [
     name: "react intersection observer",
     image: "/technologiesSection/intersect-observer.png",
   },
+  {
+    name: "Node.js",
+    image: "/technologiesSection/nodejs.png",
+  },
+  {
+    name: "Express.js",
+    image: "/technologiesSection/expressjs.png",
+  },
+  {
+    name: "MongoDB",
+    image: "/technologiesSection/mongodb.png",
+  },
 ];
