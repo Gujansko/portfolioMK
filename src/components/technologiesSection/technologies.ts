@@ -68,4 +68,36 @@ export const technologies: technology[] = [
     name: "MongoDB",
     image: "/technologiesSection/mongodb.png",
   },
+  {
+    name: "Azure",
+    image: "/technologiesSection/azure.png",
+  },
+  {
+    name: "MSSQL",
+    image: "/technologiesSection/mssql.png",
+  },
+  {
+    name: "C#",
+    image: "/technologiesSection/csharp.png",
+  },
+  {
+    name: ".NET",
+    image: "/technologiesSection/dotnet.png",
+  },
+  {
+    name: "Flutter",
+    image: "/technologiesSection/flutter.png",
+  },
+  {
+    name: "Kotlin",
+    image: "/technologiesSection/kotlin.png",
+  },
+  {
+    name: "Supabase",
+    image: "/technologiesSection/supabase.png",
+  },
+  {
+    name: "NestJS",
+    image: "/technologiesSection/nestjs.png",
+  },
 ];
