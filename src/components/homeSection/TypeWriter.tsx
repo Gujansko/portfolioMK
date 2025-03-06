@@ -10,7 +10,7 @@ export default function TypeWriter() {
     const typed = new Typed(el.current, {
       strings: textSlideContents,
       typeSpeed: 100,
-      backSpeed: 100,
+      backSpeed: 75,
       startDelay: 2000,
       backDelay: 1500,
       loop: true,

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import face from "public/homeSection/face.png";
+import face from "public/homeSection/f1.jpg";
 import AnimateWrapper from "../animations/animateWrapper";
 import TypeWriter from "./TypeWriter";
 
@@ -26,7 +26,7 @@ export default function HomeSection() {
             src={face}
             alt="face"
             priority={true}
-            className="mx-auto max-w-[90%] rounded-full max-lg:pt-8"
+            className="mx-auto max-w-[70%] [clip-path:polygon(120px_0,100%_0,100%_calc(100%-120px),calc(100%-120px)_100%,0_100%,0_120px)]"
           />
         </AnimateWrapper>
         <AnimateWrapper
@@ -35,7 +35,7 @@ export default function HomeSection() {
           duration={2}
           delay={0.6}
         >
-          <h2 className="h-[200px] max-w-[500px] px-4 pt-8 text-center text-2xl font-bold italic text-slate-50 tiny:text-3xl vsm:text-4xl xl:text-5xl">
+          <h2 className="h-[200px] max-w-[492px] px-4 pt-8 text-center text-xl font-bold italic text-slate-50 tiny:text-3xl vsm:text-4xl xl:text-5xl">
             <TypeWriter />
           </h2>
         </AnimateWrapper>
